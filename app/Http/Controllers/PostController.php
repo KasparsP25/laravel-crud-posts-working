@@ -77,9 +77,10 @@ class PostController extends Controller
             'status' => $request->status
         ];
 
-        $post->update($data);
+        $post->status = $request->status;
+        $post->save();
 
-        return redirect()->route('posts.show');
+        return redirect()->route('posts.show', $post);
     }
 
 
