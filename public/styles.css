@@ -1,0 +1,81 @@
+body {
+  background: #f0d478;
+}
+h1 {
+  color: #000000;
+}
+li {
+  color: #585858;
+}
+.button-row {
+  display: flex;
+  gap: .5rem;   /* space between buttons */
+}
+a {
+    display: inline-block;
+  padding: .6em 1.2em;
+  color: #fff;
+  background: #0d6efd;
+  border-radius: .250em;
+  cursor: pointer;
+  user-select: none;
+  transition: .15s;
+}
+a:hover {
+  background: #072b61;
+}
+.btn-like {
+    display: inline-block;
+  padding: .5em 0.8em;
+  font-size: 1rem;  
+  color: #fff;
+  background: #0d6efd;
+  border-radius: .25em;
+  cursor: pointer;
+  user-select: none;
+  transition: .15s;
+}
+.btn-like:hover {
+  background: #073d8d;
+}
+.PostBox {
+  display: inline-block;
+  padding: .5em 0.8em;
+  font-size: 1rem;  
+  background: #e6e6e6;
+  border-radius: .25em;
+  user-select: none;
+  transition: .15s;
+}
+.PostViewBox {
+  display: inline-block;
+  padding: .9em 9em;
+  font-size: 1rem;  
+  background: #e6e6e6;
+  border-radius: .25em;
+  user-select: none;
+  transition: .15s;
+}
+.alert-success {
+    background: #d1edff;
+    color: #0c5460;
+    border: 1px solid #b8daff;
+    padding: .75rem 1.25rem;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.naviBar {
+  background-color: white;
+  border-radius: .25em;
+}
+/* .box {
+  display: center;
+  padding: .5em 0.8em;
+  font-size: 1rem;  
+  background: #e6e6e6;
+  border-radius: .25em;
+  user-select: none;
+  transition: .15s;
+  text-align: center;
+} */

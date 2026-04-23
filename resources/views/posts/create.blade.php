@@ -1,7 +1,7 @@
 <x-app-layout>
     <h1>Create post</h1>
 
-    <form action="/posts" method="post">
+    <form action="{{ route('posts.store') }}" method="post">
         @csrf
         <label for="title">Title: </label>
         <input type="text" id="title" name="title">
@@ -11,4 +11,10 @@
         <br>
         <input type="submit" value="Create">
     </form>
+    @error('title')
+    <div class="alert alert-danger">{{ $message }}</div>
+    @enderror
+    @error('content')
+    <div class="alert alert-danger">{{ $message }}</div>
+    @enderror
 </x-app-layout>
