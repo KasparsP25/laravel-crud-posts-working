@@ -70,6 +70,18 @@ class PostController extends Controller
         return redirect()->route('posts.index');
     }
 
+    public function duplicate(Post $post)
+    {
+        $data = [
+            'title' => $post->title . " (copy)",
+            'content' => $post->content
+        ];
+
+        $post->create($data);
+
+        return redirect()->route('posts.index');
+    }
+
 
     public function statusUpdate(Request $request, Post $post)
     {
