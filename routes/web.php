@@ -39,3 +39,8 @@ Route::get('/display-car', function () {
     $car2 = \App\Models\Car::create('Tesla', 'GR86', 2026, 'Steel Blue');
     echo $car2->html();
 });
+
+Route::get('/display-event', function () {
+    $Event = \App\Models\Event::create("Vasaras koncerts","2024-08-15",0);
+    echo $Event->html();
+});

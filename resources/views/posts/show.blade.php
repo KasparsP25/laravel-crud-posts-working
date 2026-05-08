@@ -17,7 +17,6 @@
             </optgroup>
         </select>
         <input type="submit" value="Submit">
-        <!-- <a href="{{ route('posts.duplicate', $post->id) }}">Duplicate</a> -->
     </form>
     <form action="{{ route('posts.duplicate', $post->id) }}" method = "post">
         @csrf
